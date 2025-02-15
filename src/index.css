@@ -5,6 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+   font-family: intier, sans-serif;
+}
+
 @layer base {
    .nav-items {
       @apply px-4 py-1.5 rounded-full text-white/70  md:text-sm font-semibold transition-all duration-300;
