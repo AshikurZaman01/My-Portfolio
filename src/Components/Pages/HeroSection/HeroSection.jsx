@@ -2,10 +2,18 @@ import image from '../../../assets/assets/images/memoji-computer.png'
 import ArrowDown from '../../../assets/assets/icons/arrow-down.svg'
 import { motion } from "framer-motion";
 
+import HeroBgImage from './HeroBgImage';
+import HeroBgStyle from './HeroBgStyle';
+
 
 const HeroSection = () => {
    return (
-      <div className="min-h-screen py-32 md:py-34 lg:py-50">
+      <div className=" py-32 md:py-36 lg:py-40 relative z-0 overflow-x-clip">
+
+         <HeroBgImage />
+
+         <HeroBgStyle />
+
 
          <div className="container mx-auto">
 
@@ -13,7 +21,11 @@ const HeroSection = () => {
                <img src={image} alt="" className='size-[100px]' />
 
                <div className='bg-gray-950 border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg'>
-                  <div className='bg-green-500 size-2.5 rounded-full'></div>
+                  <motion.div
+                     className="bg-green-500 size-2.5 rounded-full"
+                     animate={{ scale: [1, 1.5, 1] }}
+                     transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
+                  />
                   <div className='text-sm font-semibold'>Available for new projects</div>
                </div>
             </div>
