@@ -21,32 +21,36 @@ const Project = ({ project }) => {
 
          </div>
 
-         <div className="bg-gradient-to-r from-emerald-300  to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
-            <span>{company}</span>
-            <span>&bull;</span>
-            <span>{year}</span>
+         <div className="lg:grid lg:grid-cols-2">
+            <div>
+
+               <div className="bg-gradient-to-r from-emerald-300  to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
+                  <span>{company}</span>
+                  <span>&bull;</span>
+                  <span>{year}</span>
+               </div>
+
+
+               <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-3xl">{title}</h3>
+               <hr className="border-t-2 border-white/5 mt-4 mb-4 md:mt-5" />
+
+               <ProjectResults results={results} />
+
+
+               <div className="flex flex-col md:flex-row gap-x-4">
+                  <Link to={githubLink} target="_blank">
+                     <Button text="Visit Github Link"></Button>
+                  </Link>
+
+                  <Link to={liveLink} target="_blank">
+                     <Button text="Visit Live Link"></Button>
+                  </Link>
+               </div>
+            </div>
+
+
+            <ProjectImg title={title} image={image} />
          </div>
-
-
-         <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-3xl">{title}</h3>
-         <hr className="border-t-2 border-white/5 mt-4 mb-4 md:mt-5" />
-
-         <ProjectResults results={results} />
-
-
-         <div className="flex flex-col md:flex-row gap-x-4">
-            <Link to={githubLink} target="_blank">
-               <Button text="Visit Github Link"></Button>
-            </Link>
-
-            <Link to={liveLink} target="_blank">
-               <Button text="Visit Live Link"></Button>
-            </Link>
-         </div>
-
-
-         <ProjectImg title={title} image={image} />
-
 
       </div >
    );
