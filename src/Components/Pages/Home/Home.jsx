@@ -1,6 +1,7 @@
 import HeroSection from "../HeroSection/HeroSection"
 import Projects from "../Projects/Projects"
 import TapeSection from "../TapeSection/TapeSection"
+import Testimonial from "../Testimonial/Testimonial"
 
 const Home = () => {
    return (
@@ -11,6 +12,8 @@ const Home = () => {
          <Projects />
 
          <TapeSection />
+
+         <Testimonial />
 
 
       </div>
