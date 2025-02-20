@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectImg = ({ image, title }) => {
    return (
-      <div className="group relative mx-auto mt-8 w-full max-w-[900px] overflow-hidden rounded-xl transition-transform duration-300">
+      <div className="group relative mx-auto mt-8 w-full max-w-[800px] overflow-hidden rounded-xl transition-transform duration-300">
 
          <div className="relative mx-auto w-[95%] h-auto md:h-[320px] rounded-xl border-[14px] border-gray-900 bg-gray-900 shadow-2xl shadow-gray-900/60 pb-6">
 
