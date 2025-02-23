@@ -31,3 +31,11 @@ body{
   0% { transform: translateX(0%); }
   100% { transform: translateX(-50%); }
 }
+
+.swiper-pagination-bullet {
+   @apply w-2.5 h-2.5 bg-gray-600 opacity-100 transition-all duration-300;
+ }
+ 
+ .swiper-pagination-bullet-active {
+   @apply w-8 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full;
+ }
